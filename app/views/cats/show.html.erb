@@ -1,0 +1,12 @@
+<big><big><big> <h2><%=@cat.name%></h2> </big></big></big>
+
+<br>
+<img src="<%= @cat.picture_url %>" />
+
+
+<ul>
+  <li><%= @cat.inspect %></li>
+</ul>
+
+<%= button_to "Remove Cat", cat_url(@cat), method: :delete %>
+<%#= button_to "Edit Cat", cat_url(@cat), method: :patch %>

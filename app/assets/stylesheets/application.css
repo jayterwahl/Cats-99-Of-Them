@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+ background-image: url("http://images4.alphacoders.com/121/121678.jpg");
+}
+
+
+body {
+  color: white
+}
+
+body, html {
+    cursor: url("https://45.media.tumblr.com/f2eb0651f9d689465f92bc0980055a9a/tumblr_nxius1i5sj1rby04wo1_250.gif"), progress;
+}
+
+img {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+/* Disable grayscale on hover */
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}

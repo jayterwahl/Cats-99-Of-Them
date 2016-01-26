@@ -1,2 +1,3 @@
-class Cat < ActiveRecord::Base 
+class Cat < ActiveRecord::Base
+  validates :name, :picture_url, presence: true
 end
