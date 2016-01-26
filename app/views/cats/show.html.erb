@@ -5,7 +5,11 @@
 
 
 <ul>
-  <li><%= @cat.inspect %></li>
+  <li>Name: <%= @cat.name %></li>
+  <li>Age: <%= @cat.age %></li>
+  <li>Sex: <%= @cat.sex %></li>
+  <li>Bio: <%= @cat.biography %></li>
+  <li>Color: <%= @cat.coat_color %></li>
 </ul>
 
 <%= button_to "Remove Cat", cat_url(@cat), method: :delete %>
