@@ -13,4 +13,4 @@
 </ul>
 
 <%= button_to "Remove Cat", cat_url(@cat), method: :delete %>
-<%#= button_to "Edit Cat", cat_url(@cat), method: :patch %>
+<%= link_to "Update Cat", edit_cat_url(@cat)%>

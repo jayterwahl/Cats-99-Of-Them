@@ -10,7 +10,7 @@ class CatsController < ApplicationController
   end
 
   def show
-    @cat = Cat.find_by(id: params[:id])
+    @cat = Cat.find(params[:id])
     if @cat
       render :show
     else
@@ -19,6 +19,7 @@ class CatsController < ApplicationController
   end
 
   def create
+    puts self.params
     Cat.create!(cat_params)
     redirect_to cats_url
   end
@@ -31,7 +32,12 @@ class CatsController < ApplicationController
   end
 
   def update
-    render :update
+    render :blank
+  end
+
+  def edit
+    @cat = Cat.find_by(id: params[:id])
+    render :edit
   end
 
 
